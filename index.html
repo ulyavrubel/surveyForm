@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Chinese School Survey Form</h1>
+    <p id="description">Thank you for your time</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label class="form-control" id="name-label" for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-control" id="email-label" for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your e-mail"
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-control" id="number-label" for="number">How many years do you learn Chinese with our school?:</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="0"
+          max="5"
+          placeholder="0-5"
+        />
+      <div class="form-group">
+        <p>Select your professional level:</p>
+        <select class="form-control" name="profLevel" id="dropdown">
+            <option value="student">Student</option>
+            <option value="employedFull">Full-time employed</option>
+            <option value="employedPart">Part-time employed</option>
+            <option value="employer">Employer</option>
+        </select>
+      </div>
+      <div class="form-group">
+            <p>Do you plan to pass HSK exam:</p>
+            <label>
+                <input name="hsk" type="radio" class="input-radio" value="yes" checked>
+                Yes
+            </label>
+            <label>
+                <input name="hsk" type="radio" class="input-radio" value="no">
+                No
+            </label>
+            <label>
+                <input name="hsk" type="radio" class="input-radio" value="dontKnow">
+                I don't know yet
+            </label>            
+        </div>
+        <div class="form-group">
+            <p>What are your purposes for learning Chinese?</p>
+            <label>
+                <input name="purpose" value="job" type="checkbox" class="input-checkbox">
+                My job requires speaking Chinese
+            </label>
+            <label>
+                <input name="purpose" value="life" type="checkbox" class="input-checkbox">
+                I want to be able to make general life conversations
+            </label>
+            <label>
+                <input name="purpose" value="culture" type="checkbox" class="input-checkbox">
+                I'm facinated with Chinese culture
+            </label>
+            <label>
+                <input name="purpose" value="hongLouMeng" type="checkbox" class="input-checkbox">
+                My main purpose in life is to read Hong Lou Meng in original
+            </label>
+        </div>
+        <div class='form-group'>
+            <p>Any comments how we can improve our educational process?</p>
+            <textarea class="form-control" name="comment" id="comments" cols="30" rows="10" placeholder="Add your comment here..."></textarea>
+        </div>
+        <div class='form-group'>
+            <button type="submit" id="submit" class='submit-button'>Submit</button>
+        </div>
+    </form>
+  </body>
+</html>

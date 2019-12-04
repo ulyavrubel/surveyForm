@@ -75,3 +75,10 @@ button {
   color: white;
   font-family: Comfortaa;
 }
+
+@media (max-width: 700px) {
+  #survey-form {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
